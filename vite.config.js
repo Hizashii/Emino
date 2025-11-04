@@ -2,12 +2,14 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 
-// GitHub Pages base path - change this to your repo name if not deploying to root
-// For https://username.github.io/repo-name use '/repo-name/'
-// For https://username.github.io use '/'
+// For GitHub Pages deployment
+// If deploying to https://hizashii.github.io/emino/ use '/emino/'
+// If deploying to https://hizashii.github.io use '/'
+
 export default defineConfig({
-  base: '/',
-  plugins: [react(),
+  base: '/emino/',
+  plugins: [
+    react(),
     tailwindcss(),
   ],
   build: {
@@ -15,4 +17,3 @@ export default defineConfig({
     assetsDir: 'assets',
   },
 })
-
