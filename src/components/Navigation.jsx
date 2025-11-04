@@ -65,7 +65,7 @@ const Navigation = () => {
           className="flex items-center opacity-0"
           onClick={(e) => handleScroll(e, '#hero')}
         >
-          <img src="/assets/image/logo.svg" alt="logo" className="h-8 w-auto transition-transform hover:scale-110" />
+          <img src={`${import.meta.env.BASE_URL}assets/image/logo.svg`} alt="logo" className="h-8 w-auto transition-transform hover:scale-110" />
         </a>
         <ul className={`flex list-none gap-10 m-0 p-0 ${isMenuOpen ? 'fixed left-0 top-[70px] flex-col bg-white/98 w-full text-center shadow-md py-8 gap-0' : 'hidden md:flex'}`}>
           {navLinks.map((link) => (

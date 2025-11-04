@@ -36,7 +36,7 @@ const Footer = () => {
               className="inline-flex items-center gap-3"
             >
               <img
-                src="/assets/image/logo.svg"
+                src={`${import.meta.env.BASE_URL}assets/image/logo.svg`}
                 alt="Emino"
                 className="h-8 w-auto brightness-0 invert"
               />

@@ -48,7 +48,7 @@ const Loader = ({ onComplete }) => {
       className="fixed inset-0 z-[9999] flex flex-col items-center justify-center bg-white"
     >
       <div ref={logoRef} className="mb-8">
-        <img src="/assets/image/logo.svg" alt="Loading" className="h-12 w-auto" />
+        <img src={`${import.meta.env.BASE_URL}assets/image/logo.svg`} alt="Loading" className="h-12 w-auto" />
       </div>
       <div className="w-48 h-1 bg-gray-200 rounded-full overflow-hidden">
         <div 
